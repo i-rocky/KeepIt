@@ -1,0 +1,45 @@
+html, body {
+    width: 100%;
+    margin: auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.main {
+    padding: 16px;
+}
+
+.flash {
+    text-align:center;
+    color:#fff;
+    letter-spacing: -7px;
+    font-weight:700;
+    text-transform:uppercase;
+    animation:blur .75s ease-out infinite;
+    text-shadow:0 0 5px #fff,
+    0 0 7px #fff;
+}
+
+@keyframes blur{
+    from{
+        text-shadow:0 0 10px #fff,
+        0 0 10px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 50px #fff,
+        0 0 50px #fff,
+        0 0 50px #7B96B8,
+        0 0 150px #7B96B8,
+        0 10px 100px #7B96B8,
+        0 10px 100px #7B96B8,
+        0 10px 100px #7B96B8,
+        0 10px 100px #7B96B8,
+        0 -10px 100px #7B96B8,
+        0 -10px 100px #7B96B8;}
+}
+
