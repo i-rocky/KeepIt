@@ -1,3 +1,3 @@
 <div class="content">
-    Loaded: <%data.slug%>
+    Loaded: @{{data.slug}}
 </div>

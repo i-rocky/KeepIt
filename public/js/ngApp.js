@@ -1,9 +1,22 @@
 var app;
 
-app = angular.module('KeepIt', ['ngRoute'], function($interpolateProvider) {
+app = angular.module('KeepIt', ['ngRoute']);/*, function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
-});
+});*/
+
+app
+    .directive('selectpicker', function () {
+        return {
+            restrict: 'C',
+            link: function (scope, element) {
+                $(element).selectpicker({
+                    style: 'btn-default',
+                    size: false
+                });
+            }
+        };
+    });
 
 app
     .config(function($routeProvider) {

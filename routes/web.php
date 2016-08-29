@@ -27,4 +27,5 @@ Route::get('/user/{page}', function ($page=null){
     if(substr($page, -4)==".htm"){
         return view("user.".substr($page, 0, -4));
     }
+
 });
